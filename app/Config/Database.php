@@ -85,9 +85,15 @@ class Database extends Config
 		// Ensure that we always set the database group to 'tests' if
 		// we are currently running an automated test suite, so that
 		// we don't overwrite live data on accident.
-		if (ENVIRONMENT === 'testing')
-		{
-			$this->defaultGroup = 'tests';
+		switch (ENVIRONMENT) {
+		  case 'production':
+		    $this->defaultGroup = 'default';
+		    break;
+		  case 'development':
+		    $this->defaultGroup = 'test';
+		    break;
+		  default:
+		    $this->defaultGroup = 'default';
 		}
 	}
 
