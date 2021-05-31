@@ -33,4 +33,3 @@
     </div>
   </div>
 </div>
-<script type = "text/javascript" src =<?php echo base_url()."/js/auth_handler.js"; ?>></script>
