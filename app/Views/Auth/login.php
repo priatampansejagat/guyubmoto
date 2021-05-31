@@ -3,7 +3,7 @@
     <div class="col col-5">
 
       <div class="card">
-        <h5 class="card-header qliq-card-header">Sign in to your Qliq.link account</h5>
+        <h5 class="card-header qliq-card-header">Sign in to your Guyubmoto account</h5>
         <div class="card-body">
 
           <div id="loginConfirm_input">

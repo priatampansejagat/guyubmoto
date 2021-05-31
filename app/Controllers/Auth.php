@@ -2,11 +2,9 @@
 
 namespace App\Controllers;
 
-class Landing extends BaseController
-{
+class Auth extends BaseController{
 
 	public function index(){
-        // echo ('hello auth');
 		return redirect()->to(base_url().'/auth/login/');
 	}
 

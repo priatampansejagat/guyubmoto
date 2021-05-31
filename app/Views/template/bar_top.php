@@ -39,7 +39,7 @@
       <div class="topnav-right">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Family Area <span class="sr-only"></span></a>
+            <a class="nav-link" href="<?php echo base_url()."/auth"; ?>">Family Area <span class="sr-only"></span></a>
           </li>
         </ul>
       </div>
