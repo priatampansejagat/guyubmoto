@@ -9,7 +9,7 @@ class Landing extends BaseController
         // echo ('hello auth');
 
 				// deployView(['Landing/landing_page']);
-				deployView(['header','bar_top','Auth/join','footer','js_handler']);
+				deployView(['header','bar_top','Landing/landing_page','footer','js_handler']);
 
 	}
 

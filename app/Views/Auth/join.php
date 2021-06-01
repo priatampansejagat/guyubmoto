@@ -1,8 +1,4 @@
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
 
 .bg {
   /* The image used */

@@ -18,6 +18,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
 
 	<link rel="stylesheet" href="<?php echo base_url().'/css/color.scss'; ?>">
+	<link rel="stylesheet" href="<?php echo base_url().'/css/guyubmoto_style.css'; ?>">
 	<script type = "text/javascript" src =<?php echo base_url()."/js/global_constant.js"; ?>></script>
 	<script src =<?php echo base_url()."/js/ajaxhandler.js"; ?>></script>
 
