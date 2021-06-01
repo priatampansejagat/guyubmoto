@@ -9,6 +9,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+use App\Libraries\Curl_api;
 /**
  * Class BaseController
  *
@@ -55,7 +56,8 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
 
+		$this->curl_api = new Curl_api();
 		$this->session = \Config\Services::session();
-		
+
 	}
 }

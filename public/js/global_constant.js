@@ -1,5 +1,5 @@
 /*  GLOBAL URL  */
-var curl_base_url = 'http://localhost/api-guyubmoto/public/';
+var curl_base_url = 'http://localhost/guyubmoto/public/';
 
 var curl_post_url       = 'Curl/Api_handler/post';
 var curl_file_post_url  = 'Curl/Api_handler/post_file';
