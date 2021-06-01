@@ -11,6 +11,7 @@ function deployView($arrElement=[], $data=[]){
   }else{
     echo view('template/header');
     echo view('template/bar_top');
+    echo view('template/bar_side');
     echo view($arrElement[0]);
     echo view('template/footer');
     echo view('template/js_handler');

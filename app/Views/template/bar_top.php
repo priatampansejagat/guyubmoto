@@ -1,6 +1,6 @@
 <div class="container-liquid">
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light py-4 " style="background-color: #e3f2fd;">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light py-1 shadow-sm" style="background-color: white;">
 
     <div class="container" >
       <a class="navbar-brand" href="#">
