@@ -1,4 +1,3 @@
-
   <nav class="navbar sticky-top navbar-expand-lg navbar-light py-1 shadow-sm" style="background-color: white; position: sticky;">
 
     <div class="container" >
