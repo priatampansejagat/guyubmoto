@@ -16,6 +16,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
 
+	<script type = "text/javascript" src =<?php echo base_url()."/js/global_constant.js"; ?>></script>
+	<script src =<?php echo base_url()."/js/ajaxhandler.js"; ?>></script>
 
 </head>
 <body>

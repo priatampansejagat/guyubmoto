@@ -14,16 +14,24 @@ class Auth extends BaseController{
 		deployView(['header','Auth/login','js_handler']);
 	}
 
-	// public function login_check(){
-	// 	echo json_encode($_POST);
-	// }
+	public function login_confirm(){
+		echo json_encode($_POST);
+	}
 
-	public function register(){
-		deployView(['header','Auth/register','js_handler']);
+	public function join(){
+		deployView(['header','Auth/join','js_handler']);
+	}
+
+	public function join_confirm(){
+
 	}
 
 	public function reset_password(){
 		deployView(['header','Auth/reset_password','js_handler']);
+	}
+
+	public function reset_confirm(){
+
 	}
 
 
