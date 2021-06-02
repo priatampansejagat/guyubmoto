@@ -35,7 +35,10 @@
                 <div class="topnav-right">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="<?php echo base_url()."/auth"; ?>">Logout<span class="sr-only"></span></a>
+                      <a class="nav-link" href="<?php echo base_url(); ?>">Public Area<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?php echo base_url()."/auth/logout"; ?>">Logout<span class="sr-only"></span></a>
                     </li>
                   </ul>
                 </div>
@@ -94,7 +97,7 @@
             <div class="topnav-right">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo base_url()."/auth"; ?>">Family Area <span class="sr-only"></span></a>
+                  <a class="nav-link" href="<?php echo base_url()."/family"; ?>">Family Area <span class="sr-only"></span></a>
                 </li>
               </ul>
             </div>

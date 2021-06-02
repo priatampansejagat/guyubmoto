@@ -1,10 +1,16 @@
 
 function doLogin(obj){
-  $.when(callAjaxPost(obj)).then(function(response){
 
-    if (response['data']['status'] == 'success') {
-      window.location.replace(base_url+'auth/redirect?redirect=login');
-    }
+  obj.disabled = true;
+  $('#'+obj.id).html(
+        '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...'
+      );
+
+  $.when(callAjaxPost(obj)).then(function(response){
+    $('#'+obj.id).html('Login');
+    obj.disabled = false;
+
+    window.location.replace(base_url+'auth/redirect?redirect=login');
 
   });
 }

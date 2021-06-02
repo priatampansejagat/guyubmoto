@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Landing::index');
 
+$routes->group('family',['filter' => 'auth_filter'], function($routes){
+	$routes->add('home', 'Family::home');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

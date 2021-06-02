@@ -80,7 +80,7 @@
                   </div>
                 </div>
 
-                <button onclick="doLogin(this)" class="btn btn-primary" id="loginConfirm">Submit</button>
+                <button onclick="doLogin(this)" class="btn btn-primary" id="loginConfirm">Login</button>
 
                 <a href="<?php echo base_url()."/auth/reset_password"; ?>" > Forgot password? </a>
                 <hr/>
