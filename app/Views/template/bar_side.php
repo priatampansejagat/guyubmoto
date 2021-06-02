@@ -1,9 +1,49 @@
-<div class="row">
-  
-  <div class="wrapper">
-    <nav id="sidebar">
+<link rel="stylesheet" href="<?php echo base_url().'/css/sidebar.css'; ?>">
+
+<style>
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+</style>
+
+
+<div class="wrapper">
+  <nav id="sidebar">
+
       <div class="sidebar-header">
-          <h3>Guyubmoto</h3>
+          <ul class="navbar-nav mr-auto">
+
+          </ul>
+
+          <div class="topnav-right sidebarCollapse_sidebar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info ">
+                    <i class="fas fa-align-left"></i>
+                    <span></span>
+                </button>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="topnav-right brand_button_sidebar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+
+                <a href="#">
+                  <img src="<?php echo base_url().LOGO_URL; ?>" width="40" height="40" alt="">
+                </a>
+
+              </li>
+            </ul>
+          </div>
+
       </div>
 
       <ul class="list-unstyled components">
@@ -50,59 +90,23 @@
           </li>
       </ul>
 
-      <ul class="list-unstyled CTAs">
-          <li>
-              <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-          </li>
-          <li>
-              <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-          </li>
-      </ul>
 
-    </nav>
+  </nav>
 
 
-    <div id="content">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span></span>
-                </button>
-                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-align-justify"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-      </div>
-  </div>
-
+  <!-- <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span></span>
+        </button>
+      </nav>
+    </div> -->
 </div>
-
 
 <script type="text/javascript">
     $(document).ready(function () {
+
         $("#sidebar").mCustomScrollbar({
             theme: "minimal"
         });
@@ -112,5 +116,15 @@
             $('.collapse.in').toggleClass('in');
             $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         });
+
+        $('#sidebarCollapse_topbar').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // if ($(window).width() >=768) {
+        //   $(".brand_button_sidebar").hide();
+        // }
     });
 </script>

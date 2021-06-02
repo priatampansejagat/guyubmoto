@@ -1,19 +1,98 @@
-<style>
-  #sticky-sidebar {
-  position:fixed;
-  max-width: 15%;
-  }
-</style>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="col-xs-12" id="sticky-sidebar">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </div>
+    <div class="wrapper">
+      <nav id="sidebar">
+
+
+          <div class="sidebar-header">
+              <h3>Guyubmoto</h3>
+          </div>
+          <ul class="list-unstyled components">
+              <p>Hello There</p>
+
+              <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 3</a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li>
+                  <a href="#">About</a>
+              </li>
+
+              <li>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <li>
+                          <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Portfolio</a>
+              </li>
+              <li>
+                  <a href="#">Contact</a>
+              </li>
+          </ul>
+
+          <ul class="list-unstyled CTAs">
+              <li>
+                  <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+              </li>
+              <li>
+                  <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+              </li>
+          </ul>
+
+
+      </nav>
+
+
+      <div id="content">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                      <i class="fas fa-align-left"></i>
+                      <span></span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+              </div>
+          </nav>
+
+
+        </div>
     </div>
-    <div class="col-xs-8">
-        aaaaaaaaaaa
-    </div>
-  </div>
-</div
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>

@@ -10,7 +10,8 @@ class Family extends BaseController{
 
   public function home(){
 		// echo $_SERVER['CI_ENVIRONMENT'];
-		deployView(['Family/home']);
+		$data = array('page' => 'family' );
+		deployView(['Family/home'],	$data);
 	}
 
 
