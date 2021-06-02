@@ -27,6 +27,9 @@
               <div class="card-body">
 
                 <div id="joinConfirm_input">
+
+                  <div id="message"></div>
+
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email">
@@ -39,6 +42,10 @@
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                   </div>
+                  <div class="form-group">
+                    <label for="ulangi_password">Ulangi Password</label>
+                    <input type="password" class="form-control" id="ulangi_password" name="ulangi_password" placeholder="Ulangi Password">
+                  </div>
                   <hr/>
                   <div class="form-group">
                     <label for="instagram">Instagram link or username</label>
@@ -49,7 +56,9 @@
                     <input type="text" class="form-control" id="portfolio" name="portfolio" placeholder="Portfolio">
                   </div>
 
-                  <button onclick="doJoin(this)" class="btn btn-primary" id="joinConfirm">Next</button>
+                  <button onclick="doJoin(this)" class="btn btn-primary" id="joinConfirm">
+                    Next
+                  </button>
 
                   <hr/>
                   <a href="<?php echo base_url()."/auth/login"; ?>" > Already have an account? </a>

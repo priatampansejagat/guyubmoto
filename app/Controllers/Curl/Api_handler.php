@@ -7,8 +7,8 @@ use App\Controllers\BaseController;
 class Api_handler extends BaseController
 {
 
-  protected $curl_api;
-  protected $session;
+  // protected $curl_api;
+  // protected $session;
 
   public function __construct(){
         // $this->session = \Config\Services::session();
@@ -50,8 +50,11 @@ class Api_handler extends BaseController
 
     public function post(){
         $data = $this->request->getPost();
+
+
+
         if(isset($data['param'])){
-          // $encode = json_encode($data['param']);
+
             $encode = $data['param'];
         }else{
             $encode = '';
@@ -63,8 +66,6 @@ class Api_handler extends BaseController
             'data' => $encode
         );
 
-        // echo json_encode($this->request->getPost('url'));
-
         $this->curl_api->set_option($option);
         $data_object = $this->curl_api->exec();
 
@@ -73,6 +74,10 @@ class Api_handler extends BaseController
               http_response_code($data_object->status);
           }
         }
+
+        /* CREATE FLASH SESSION INCOMING DATA FOR SECURITY*/
+        $data_flash = array('send' => $data, 'response' => $data_object);
+        $this->session->setFlashdata($data_flash);
 
         echo json_encode($data_object);
     }

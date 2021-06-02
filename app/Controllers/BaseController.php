@@ -38,7 +38,14 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = ['fire_helper'];
+	/**
+		* EVERY VARIABLE to pre-load must be here
+		*
+		*
+		*/
 
+		protected $curl_api;
+		protected $session;
 	/**
 	 * Constructor.
 	 *

@@ -8,10 +8,79 @@ class Auth extends BaseController{
 		return redirect()->to(base_url().'/auth/login/');
 	}
 
-  public function login(){
-		// echo $_SERVER['CI_ENVIRONMENT'];
+	public function redirect(){
 
-		deployView(['header','Auth/login','js_handler']);
+		if (isset($_GET['redirect'])) {
+
+			if ($_GET['redirect'] == 'login') {
+
+				$encoded_flash = json_encode($this->session->getFlashdata());
+				$flash_data = json_decode($encoded_flash, true);
+
+				if (count($flash_data) > 0) {
+
+					if ($flash_data['response']['data']['status'] == 'success') {
+						if ($flash_data['send']['param']['keep_login'] == true) {
+							// create session login
+							$data_login = array('data_login' =>
+																							array(	'username' => $flash_data['send']['param']['username'],
+																											'keep_login' => $flash_data['send']['param']['keep_login'],
+																											'status' => 'true'
+																							));
+
+							$this->session->set($data_login);
+							$this->session->markAsTempdata('data_login', 7776000); //expired 3 bulan
+						}else{
+							// create session login
+							$data_login = array('data_login' =>
+																							array(	'username' => $flash_data['send']['param']['username'],
+																											'keep_login' => $flash_data['send']['param']['keep_login'],
+																											'status' => 'true'
+																							));
+
+							$this->session->set($data_login);
+							$this->session->markAsTempdata('data_login', 86400); //expired 1 hari
+
+						}
+
+						return redirect()->to(base_url().'/family/home');
+
+					}else {
+						// gagal login
+						return redirect()->to(base_url().'/auth/login?status=failed');
+					}
+				}else {
+					// gagal login
+					return redirect()->to(base_url().'/auth/login?status=failed');
+				}
+
+			}else {
+				// gagal home publik
+				return redirect()->to(base_url());
+			}
+		}else {
+			// gagal home publik
+			return redirect()->to(base_url());
+		}
+	}
+
+  public function login(){
+		$data = array();
+
+		if (isset($_GET['status'])) {
+			$data['status'] = $_GET['status'];
+			if ($_GET['status'] == 'sukses') {
+
+				$data['regis_header'] = 'Hai kamu, Selamat Ya! :)';
+				$data['regis_message'] = 'Kamu telah terdaftar menjadi salah satu kandidat untuk bergabung di keluarga Guyubmoto! Yuk lakukan login dan ikuti langkah selanjutnya.';
+
+			}else{
+				$data['regis_header'] = '';
+				$data['regis_message'] = 'Login gagal, coba lagi...';
+			}
+		}
+
+		deployView(['header','Auth/login','js_handler'],$data);
 	}
 
 	public function join(){

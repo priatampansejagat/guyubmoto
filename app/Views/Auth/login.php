@@ -30,6 +30,42 @@
               <div class="card-body">
 
                 <div id="loginConfirm_input">
+
+                  <?php
+                    if (isset($regis_header)) {
+                      if (isset($regis_message)) {
+                        if ($status == 'sukses') {
+
+                          ?>
+
+                          <div id="message-flash">
+
+                            <div class="alert alert-success" role="alert">
+                              <h5 class="alert-heading"><?php echo $regis_header; ?></h5>
+                              <p><?php echo $regis_message; ?></p>
+                            </div>
+
+                          </div>
+
+                          <?php
+
+                        }else{
+                          ?>
+                          <div id="message-flash">
+
+                            <div class="alert alert-danger" role="alert">
+                              <h5 class="alert-heading"><?php echo $regis_header; ?></h5>
+                              <p><?php echo $regis_message; ?></p>
+                            </div>
+
+                          </div>
+                          <?php
+                        }
+                      }
+                    }
+                  ?>
+
+
                   <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Username">

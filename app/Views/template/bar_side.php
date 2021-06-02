@@ -50,7 +50,10 @@
           <p>Hello There</p>
 
           <li class="active">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
               <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
                       <a href="#">Home 1</a>
