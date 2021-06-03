@@ -49,47 +49,83 @@
       <ul class="list-unstyled components">
           <p>Hello There</p>
 
-          <li class="active">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                <i class="fas fa-home"></i>
-                Home
+          <li>
+              <a href="<?php base_url().'/family/home' ?>">Dashboard</a>
+          </li>
+
+          <li>
+              <a href="#MyWorks" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                My Works
               </a>
-              <ul class="collapse list-unstyled" id="homeSubmenu">
+              <ul class="collapse list-unstyled" id="MyWorks">
                   <li>
-                      <a href="#">Home 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Home 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Home 3</a>
+                      <a href="<?php base_url().'/family/myworks/photography' ?>">Photography</a>
                   </li>
               </ul>
           </li>
 
           <li>
-              <a href="#">About</a>
+              <a href="#">Blog</a>
           </li>
-
+          
           <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
+              <a href="#MyStore" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Store</a>
+              <ul class="collapse list-unstyled" id="MyStore">
                   <li>
-                      <a href="#">Page 1</a>
+                      <a href="#">Photography</a>
                   </li>
                   <li>
-                      <a href="#">Page 2</a>
+                      <a href="#">Presets</a>
                   </li>
                   <li>
-                      <a href="#">Page 3</a>
+                      <a href="#">Prints</a>
                   </li>
               </ul>
           </li>
+
           <li>
-              <a href="#">Portfolio</a>
+              <a href="#Sharing" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sharing</a>
+              <ul class="collapse list-unstyled" id="Sharing">
+                  <li>
+                      <a href="#">Sharing Time</a>
+                  </li>
+                  <li>
+                      <a href="#">Course</a>
+                  </li>
+
+              </ul>
           </li>
+
           <li>
-              <a href="#">Contact</a>
+              <a href="#Learning" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Learning</a>
+              <ul class="collapse list-unstyled" id="Learning">
+                  <li>
+                      <a href="#">Let's Grow Up!</a>
+                  </li>
+                  <li>
+                      <a href="#">My Study</a>
+                  </li>
+
+              </ul>
+          </li>
+
+          <li>
+              <a href="#MyStore" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">About Me</a>
+              <ul class="collapse list-unstyled" id="MyStore">
+                  <li>
+                      <a href="#">Biography</a>
+                  </li>
+                  <li>
+                      <a href="#">Contact</a>
+                  </li>
+                  <li>
+                      <a href="#">Dll</a>
+                  </li>
+              </ul>
+          </li>
+
+          <li>
+              <a href="#">Settings</a>
           </li>
       </ul>
 

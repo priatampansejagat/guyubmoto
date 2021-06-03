@@ -25,9 +25,11 @@ class Auth extends BaseController{
 							$data_login = array('data_login' =>
 																							array(	'username' => $flash_data['send']['param']['username'],
 																											'keep_login' => $flash_data['send']['param']['keep_login'],
-																											'status' => 'true'
+																											'status' => 'true',
+																											'level'	=> $flash_data['response']['data']['data_login']['level']
 																							));
 
+							// Harusnya simpan ke cookie
 							$this->session->set($data_login);
 							$this->session->markAsTempdata('data_login', 7776000); //expired 3 bulan
 						}else{
@@ -35,7 +37,8 @@ class Auth extends BaseController{
 							$data_login = array('data_login' =>
 																							array(	'username' => $flash_data['send']['param']['username'],
 																											'keep_login' => $flash_data['send']['param']['keep_login'],
-																											'status' => 'true'
+																											'status' => 'true',
+																											'level'	=> $flash_data['response']['data']['data_login']['level']
 																							));
 
 							$this->session->set($data_login);

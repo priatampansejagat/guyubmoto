@@ -26,7 +26,9 @@
         <div class="row justify-content-md-end ">
           <div class="col col-5">
             <div class="card">
-              <h5 class="card-header qliq-card-header">Sign in to your Guyubmoto account</h5>
+              <h5 class="card-header qliq-card-header">
+                  Sign in to your Guyubmoto account
+              </h5>
               <div class="card-body">
 
                 <div id="loginConfirm_input">
@@ -85,7 +87,19 @@
                 <a href="<?php echo base_url()."/auth/reset_password"; ?>" > Forgot password? </a>
                 <hr/>
 
-                Want to be part of the family? <a href="<?php echo base_url()."/auth/join"; ?>" > Join </a>
+                <div class="wrapper">
+                  <div class="row">
+                    <div class="col-8">
+                      Want to be part of us? <a href="<?php echo base_url()."/auth/join"; ?>" > Join </a>
+                    </div>
+                    <div class="col-4 text-right">
+                      <a href="<?php echo base_url(); ?>" type="button" class="btn btn-light"><i class="fas fa-home"></i></a>
+                    </div>
+                  </div>
+
+                </div>
+
+
 
               </div>
             </div>

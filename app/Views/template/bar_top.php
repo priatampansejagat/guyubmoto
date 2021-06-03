@@ -35,6 +35,9 @@
                 <div class="topnav-right">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
+                      <a class="nav-link" href="<?php echo base_url(); ?>">Help Us<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link" href="<?php echo base_url(); ?>">Public Area<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">

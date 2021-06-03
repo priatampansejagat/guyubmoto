@@ -15,9 +15,25 @@ class AuthFilter implements FilterInterface
 
         $encoded_data_login = json_encode($session->get('data_login'));
         $data_login = json_decode($encoded_data_login,true);
+
         if (isset($data_login['status'])) {
           if ($data_login['status'] == 'true') {
-            // continue
+
+            // Cek level
+            switch ($data_login['level']) {
+              case '1':
+                return redirect()->to(base_url().'/admin');
+                break;
+
+              case '2':
+                return redirect()->to(base_url().'/admin');
+                break;
+
+              default:
+                // lanjot
+                break;
+            }
+
           }else {
             return redirect()->to(base_url().'/auth');
           }

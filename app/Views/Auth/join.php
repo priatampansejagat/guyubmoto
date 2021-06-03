@@ -61,8 +61,18 @@
                   </button>
 
                   <hr/>
-                  <a href="<?php echo base_url()."/auth/login"; ?>" > Already have an account? </a>
 
+                  <div class="wrapper">
+                    <div class="row">
+                      <div class="col-8">
+                        <a href="<?php echo base_url()."/auth/login"; ?>" > Already have an account? </a>
+                      </div>
+                      <div class="col-4 text-right">
+                        <a href="<?php echo base_url(); ?>" type="button" class="btn btn-light"><i class="fas fa-home"></i></a>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
 
               </div>
