@@ -73,7 +73,7 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+    padding: 12px;
     display: flex;
     justify-content: flex-end;
     background: #6d7fcc;
@@ -177,11 +177,25 @@ a.article:hover {
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
-    top: 3%;
+    top: 10%;
+    right: 0;
+}
+
+#content_header {
+    width: calc(100% - 250px);
+    padding-top: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
     right: 0;
 }
 
 #content.active {
+    width: calc(100% - 90px);
+}
+
+#content_header.active {
     width: calc(100% - 90px);
 }
 
@@ -259,6 +273,10 @@ a.article:hover {
     }
 
     #brand_button {
+        display: none;
+    }
+
+    #content_header {
         display: none;
     }
 

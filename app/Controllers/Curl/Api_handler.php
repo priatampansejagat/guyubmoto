@@ -51,8 +51,6 @@ class Api_handler extends BaseController
     public function post(){
         $data = $this->request->getPost();
 
-
-
         if(isset($data['param'])){
 
             $encode = $data['param'];

@@ -38,6 +38,11 @@ $routes->group('family',['filter' => 'auth_filter'], function($routes){
 	$routes->add('home', 'Family::home');
 });
 
+$routes->group('admin',['filter' => 'auth_admin_filter'], function($routes){
+	$routes->add('home', 'Admin::home');
+	$routes->add('users', 'Admin::users');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

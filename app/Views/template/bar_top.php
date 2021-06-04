@@ -2,7 +2,7 @@
 
     <?php
       if (isset($page)) {
-        if ($page == 'family') {
+        if ($page == 'family' || $page == 'admin' ) {
 
     ?>
           <div class="container-fluid" >

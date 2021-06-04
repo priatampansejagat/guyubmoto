@@ -6,7 +6,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
 
-class AuthFilter implements FilterInterface
+class AuthAdminFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
@@ -22,15 +22,15 @@ class AuthFilter implements FilterInterface
             // Cek level
             switch ($data_login['level']) {
               case '1':
-                return redirect()->to(base_url().'/admin');
+
                 break;
 
               case '2':
-                return redirect()->to(base_url().'/admin');
+
                 break;
 
               case '3':
-                
+                return redirect()->to(base_url().'/family');
                 break;
 
               default:

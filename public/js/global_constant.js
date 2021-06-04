@@ -13,3 +13,6 @@ var api_url = [];
 // auth
 api_url['loginConfirm']      = 'auth/login_check';
 api_url['joinConfirm']       = 'auth/user_register';
+
+// admin
+api_url['users_admission']      = 'admin/users/users_admission';
