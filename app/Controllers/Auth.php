@@ -18,27 +18,30 @@ class Auth extends BaseController{
 				$flash_data = json_decode($encoded_flash, true);
 
 				if (count($flash_data) > 0) {
-
+					// dd($flash_data);
 					if ($flash_data['response']['data']['status'] == 'success') {
 						if ($flash_data['send']['param']['keep_login'] == true) {
 							// create session login
 							$data_login = array('data_login' =>
-																							array(	'username' => $flash_data['send']['param']['username'],
+																							array(	'user_id' => $flash_data['response']['data']['data_login']['id'],
+																											'username' => $flash_data['send']['param']['username'],
 																											'keep_login' => $flash_data['send']['param']['keep_login'],
 																											'status' => 'true',
-																											'level'	=> $flash_data['response']['data']['data_login']['level']
+																											'level'	=> $flash_data['response']['data']['data_login']['level'],
+																											'admission' => $flash_data['response']['data']['data_login']['admission']
 																							));
 
 							// Harusnya simpan ke cookie
 							$this->session->set($data_login);
-							$this->session->markAsTempdata('data_login', 7776000); //expired 3 bulan
+							$this->session->markAsTempdata('data_login', 7776000); //expired 3 bulan "MANA ADAAA WKWKWK, kalau mau 3 bulan pake cookie"
 						}else{
 							// create session login
 							$data_login = array('data_login' =>
 																							array(	'username' => $flash_data['send']['param']['username'],
 																											'keep_login' => $flash_data['send']['param']['keep_login'],
 																											'status' => 'true',
-																											'level'	=> $flash_data['response']['data']['data_login']['level']
+																											'level'	=> $flash_data['response']['data']['data_login']['level'],
+																											'admission' => $flash_data['response']['data']['data_login']['admission']
 																							));
 
 							$this->session->set($data_login);
@@ -68,6 +71,7 @@ class Auth extends BaseController{
 	}
 
   public function login(){
+
 		$data = array();
 
 		if (isset($_GET['status'])) {

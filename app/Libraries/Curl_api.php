@@ -94,7 +94,7 @@ class Curl_api {
 				'Content-Type: application/json'
 			);
 			$header[0] = $this->headers;
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);	//perlu dibaiki
 		}else{
 			if(isset($this->datatype)){
 				if($this->datatype != 'application/json'){

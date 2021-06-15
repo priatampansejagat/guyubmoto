@@ -16,6 +16,7 @@
                         <th>Portfolio</th>
                         <th>Detail</th>
                         <th>Date</th>
+                        <th>Acceptance</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,9 +43,13 @@
         for (var i = 0; i < response['data']['data_user'].length; i++) {
 
           admission_list[i] = [];
+          var username =response['data']['data_user'][i]['data_login']['username'];
+          var login_id =response['data']['data_user'][i]['data_login']['id'];
 
           var portfolio = '<a href="'+ response['data']['data_user'][i]['data_personal_data']['instagram'] +'" target="_blank" type="button" class="btn btn-warning">Instagram</a> ' +
                           '<a href="'+ response['data']['data_user'][i]['data_personal_data']['portfolio'] +'" target="_blank" type="button" class="btn btn-info">Other</a>';
+
+          var accept_button = '<button onclick="user_acceptance(this)" name="'+login_id+'" id="'+login_id+'" type="button" class="btn btn-info">Accept</button>';
 
           admission_list[i][0] = response['data']['data_user'][i]['data_login']['id'];
           admission_list[i][1] = response['data']['data_user'][i]['data_login']['username'];
@@ -52,9 +57,10 @@
           admission_list[i][3] = portfolio;
           admission_list[i][4] = 'Link';
           admission_list[i][5] = response['data']['data_user'][i]['data_personal_data']['created_at'];
+          admission_list[i][6] = accept_button;
 
         }
-        console.log(admission_list);
+
         var table=$('#admission_list').DataTable({
            data: admission_list
         });
@@ -62,5 +68,21 @@
       });
 
   } );
+
+  function user_acceptance(accept_button){
+
+    var dataArray = {};
+    dataArray['login_id'] = accept_button.name;
+
+    $.when(callAjaxPost_Array(dataArray, 'user_acceptance_true')).then(function(response){
+
+      if (response['data']['status'] == 'success') {
+        accept_button.disabled = true;
+        $('#'+accept_button.id).html('Accepted');
+      }
+
+    });
+
+  }
 
 </script>

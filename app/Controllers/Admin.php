@@ -10,7 +10,7 @@ class Admin extends BaseController{
 
   public function home(){
 		// echo $_SERVER['CI_ENVIRONMENT'];
-		$data = array('page' => 'admin' );
+		$data = array('page' => 'admin', 'title' => 'Dashboard' );
 		deployView(['Admin/home'],	$data);
 	}
 

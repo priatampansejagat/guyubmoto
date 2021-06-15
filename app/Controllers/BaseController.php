@@ -67,4 +67,8 @@ class BaseController extends Controller
 		$this->session = \Config\Services::session();
 
 	}
+
+	public function show404(){
+		throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+	}
 }

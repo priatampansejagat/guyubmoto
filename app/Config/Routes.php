@@ -32,16 +32,25 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Landing::index');
 
-$routes->group('family',['filter' => 'auth_filter'], function($routes){
+
+$routes->group('family',['filter' => 'family_filter_set'], function($routes){
+	$routes->add('/', 'Family::home');
 	$routes->add('home', 'Family::home');
+	$routes->add('admission', 'Family::admission');
+	$routes->add('myworks/(:any)', 'Family::myworks/$1');
+	$routes->add('aboutme/(:any)', 'Family::aboutme/$1');
 });
 
 $routes->group('admin',['filter' => 'auth_admin_filter'], function($routes){
 	$routes->add('home', 'Admin::home');
 	$routes->add('users', 'Admin::users');
 });
+
+$routes->get('/', 'Landing::index');
+$routes->get('/rules', 'Landing::rules');
+$routes->get('/fams/(:any)', 'Landing::index/$1');
+
 
 /*
  * --------------------------------------------------------------------

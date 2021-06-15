@@ -17,6 +17,8 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/8f22640392.js" crossorigin="anonymous"></script>
 
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 	<link rel="stylesheet" href="<?php echo base_url().'/css/guyubmoto_style.css'; ?>">
 	<script type = "text/javascript" src =<?php echo base_url()."/js/global_constant.js"; ?>></script>
 	<script src =<?php echo base_url()."/js/ajaxhandler.js"; ?>></script>
@@ -36,4 +38,4 @@
 
 
 </head>
-<body >
+<body class="bg-light">

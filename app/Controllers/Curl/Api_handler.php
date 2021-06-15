@@ -9,6 +9,7 @@ class Api_handler extends BaseController
 
   // protected $curl_api;
   // protected $session;
+  private $base_url = API_BASE_URL;
 
   public function __construct(){
         // $this->session = \Config\Services::session();
@@ -26,26 +27,44 @@ class Api_handler extends BaseController
         }
     }
 
+    public function post_file_test(){
+      echo json_encode($_POST);
+    }
+
     public function post_file(){
-        $filename = $_FILES['file']['name'];
-        $filedata = $_FILES['file']['tmp_name'];
-        $cFile = curl_file_create($filedata, $_FILES['file']['type'], $filename);
-        $postfields = array("file" => $cFile, "filename" => $filename);
-        $target_url = $_POST["url"];
+        $file_var = $_POST["file_var"];
+
+        $encoded_post = json_encode($_POST);
+        $decoded_post = json_decode($encoded_post,true);
+
+        $filename = $_FILES[$file_var]['name'];
+        $filedata = $_FILES[$file_var]['tmp_name'];
+        $cFile = curl_file_create($filedata, $_FILES[$file_var]['type'], $filename);
+        $postfields = array("file" => $cFile,
+                            "filename" => $filename,
+                            "data" => $encoded_post
+                          );
+        $target_url = $this->base_url . $_POST["url"];
         $request_headers = array(
-            "x-auth-userid: " . $this->session->userdata('id'),
+            // "x-auth-userid: " . $_SESSION['data_login']['user_id'],
+            "X-Requested-With: XMLHttpRequest",
             "Content-Type:multipart/form-data"
         );
 
         // $this->_log('get_file_url : '.$target_url);
 
         $ch = curl_init();
+        curl_setopt($ch, CURLINFO_HEADER_OUT, true);
         curl_setopt($ch, CURLOPT_URL, $target_url);
-        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $request_headers);
-        curl_exec($ch);
+        // curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+        $data_object = curl_exec($ch);
         curl_close($ch);
+
+        // echo $data_object;
     }
 
     public function post(){

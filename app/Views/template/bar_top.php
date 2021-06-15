@@ -1,8 +1,9 @@
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light py-1 shadow-sm" style="background-color: white; ">
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light py-1 shadow-sm" style="background-color: white; ">
 
     <?php
       if (isset($page)) {
-        if ($page == 'family' || $page == 'admin' ) {
+        if ($page == 'family' || $page == 'admin' || $page == 'admission' ) {
 
     ?>
           <div class="container-fluid" >
@@ -70,17 +71,6 @@
 
           <div class="container-fluid">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Course <span class="sr-only"></span></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Event <span class="sr-only"></span></a>
-              </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -93,6 +83,18 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Join</a>
                 </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Course <span class="sr-only"></span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event <span class="sr-only"></span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url().'/rules'; ?>">Rules <span class="sr-only"></span></a>
               </li>
 
             </ul>

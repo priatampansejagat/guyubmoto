@@ -56,6 +56,10 @@
                     <input type="text" class="form-control" id="portfolio" name="portfolio" placeholder="Portfolio">
                   </div>
 
+                  <div class="form-group">
+                    <p class="font-italic font-weight-light">Dengan menekan tombol Next, berarti menyetujui <a href="<?php echo base_url()."/rules"; ?>" target="_blank"> Rules Guyubmoto</a></p>
+                  </div>
+
                   <button onclick="doJoin(this)" class="btn btn-primary" id="joinConfirm">
                     Next
                   </button>
@@ -68,7 +72,7 @@
                         <a href="<?php echo base_url()."/auth/login"; ?>" > Already have an account? </a>
                       </div>
                       <div class="col-4 text-right">
-                        <a href="<?php echo base_url(); ?>" type="button" class="btn btn-light"><i class="fas fa-home"></i></a>
+                        <a href="<?php echo base_url(); ?>" type="button" class="btn btn-light" style="background:none; border:none;"><i class="fas fa-home"></i></a>
                       </div>
                     </div>
 
