@@ -1,6 +1,9 @@
 /*  GLOBAL URL  */
-var base_url  = 'http://localhost/guyubmoto/public/';
-var curl_base_url = 'http://localhost/guyubmoto/public/';
+// var base_url  = 'http://localhost/guyubmoto/public/';
+// var curl_base_url = 'http://localhost/guyubmoto/public/';
+var base_url  = 'https://guyubmoto.com/';
+var curl_base_url = 'https://guyubmoto.com/';
+
 
 var curl_post_url       = 'Curl/Api_handler/post';
 var curl_file_post_url  = 'Curl/Api_handler/post_file';
