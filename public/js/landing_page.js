@@ -39,6 +39,7 @@ function refresh_list(){
 
   // get content page
   $.when(callAjaxPost_Array(dataArray, 'landing_photolist')).then(function(response){
+    console.log(response);
     //sesuai semua hasil
     for (var i = 0; i < response['data']['data'].length;) {
       var temp_template = list_template.clone();
