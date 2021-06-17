@@ -49,6 +49,7 @@ $routes->group('admin',['filter' => 'auth_admin_filter'], function($routes){
 
 $routes->get('/', 'Landing::index');
 $routes->get('/rules', 'Landing::rules');
+$routes->get('/heroes', 'Landing::heroes');
 $routes->get('/fams/(:any)', 'Landing::index/$1');
 
 

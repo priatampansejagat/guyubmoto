@@ -21,6 +21,11 @@ class Landing extends BaseController
 		deployView(['header','bar_top','Landing/rules','footer','js_handler']);
 	}
 
+	public function heroes(){
+		// $data = array('page' => 'family', 'title' => 'Rules' );
+		deployView(['header','bar_top','Landing/heroes','footer','js_handler']);
+	}
+
 }
 
 ?>
