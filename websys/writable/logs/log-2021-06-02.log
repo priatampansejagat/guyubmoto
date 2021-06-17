@@ -1,0 +1,136 @@
+CRITICAL - 2021-06-02 01:09:26 --> Undefined variable $session
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->login()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-02 01:25:17 --> Unclosed '{' on line 36 does not match ']'
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Auth/login', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(8): view('Auth/login', Array)
+#3 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(23): deployView(Array, Array)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-02 03:40:07 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-02 03:46:03 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-02 03:47:54 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(79): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 03:50:40 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(79): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:03:24 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(79): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:04:11 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(79): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:04:59 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(79): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:07:30 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:08:42 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:11:44 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 04:12:20 --> Illegal offset type
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Session.php(667): CodeIgniter\Session\Session->set(Object(stdClass), NULL)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Session\Session->setFlashdata(Object(stdClass))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-02 05:04:01 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->redirect()
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-02 05:19:53 --> Undefined variable $session
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->redirect()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-02 06:55:22 --> syntax error, unexpected token "=>", expecting ")"
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-06-02 07:08:28 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('family/home', 'before')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-02 07:16:01 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\guyubmoto\app\Filters\AuthFilter.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\Filters\Filters->run('family/home', 'before')
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-02 23:29:18 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Auth/login', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(8): view('Auth/login', Array)
+#3 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(84): deployView(Array, Array)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}

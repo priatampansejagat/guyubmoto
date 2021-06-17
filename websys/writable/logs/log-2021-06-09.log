@@ -1,0 +1,48 @@
+CRITICAL - 2021-06-09 22:35:53 --> Undefined variable $session
+#0 C:\xampp\htdocs\guyubmoto\app\Views\Family\MyWorks\photography.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Family/MyWorks/...', Array, true)
+#4 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Family/MyWorks/...', Array)
+#5 C:\xampp\htdocs\guyubmoto\app\Controllers\Family.php(27): deployView(Array, Array)
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Family->myworks('photography')
+#7 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Family))
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-09 22:36:49 --> Undefined variable $session
+#0 C:\xampp\htdocs\guyubmoto\app\Views\Family\MyWorks\photography.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Family/MyWorks/...', Array, true)
+#4 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Family/MyWorks/...', Array)
+#5 C:\xampp\htdocs\guyubmoto\app\Controllers\Family.php(27): deployView(Array, Array)
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Family->myworks('photography')
+#7 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Family))
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-09 22:37:22 --> Undefined array key "username"
+#0 C:\xampp\htdocs\guyubmoto\app\Views\Family\MyWorks\photography.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Family/MyWorks/...', Array, true)
+#4 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Family/MyWorks/...', Array)
+#5 C:\xampp\htdocs\guyubmoto\app\Controllers\Family.php(27): deployView(Array, Array)
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Family->myworks('photography')
+#7 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Family))
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-09 22:37:33 --> Undefined array key "username"
+#0 C:\xampp\htdocs\guyubmoto\app\Views\Family\MyWorks\photography.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Family/MyWorks/...', Array, true)
+#4 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Family/MyWorks/...', Array)
+#5 C:\xampp\htdocs\guyubmoto\app\Controllers\Family.php(27): deployView(Array, Array)
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Family->myworks('photography')
+#7 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Family))
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}

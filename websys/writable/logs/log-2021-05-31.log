@@ -1,0 +1,64 @@
+CRITICAL - 2021-05-31 00:46:47 --> Invalid file: Auth/landing_page.php
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Auth/landing_pa...')
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Auth/landing_pa...', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(14): view('Auth/landing_pa...')
+#3 C:\xampp\htdocs\guyubmoto\app\Controllers\Landing.php(11): deployView(Array)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Landing->index()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-31 01:17:42 --> Invalid file: Landing/landing_page_head.php
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Landing/landing...')
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Landing/landing...', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Views\Landing\landing_page.php(3): view('Landing/landing...')
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Landing/landing...', Array, true)
+#6 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(14): view('Landing/landing...')
+#7 C:\xampp\htdocs\guyubmoto\app\Controllers\Landing.php(11): deployView(Array)
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Landing->index()
+#9 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+#10 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-05-31 01:36:37 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 C:\xampp\htdocs\guyubmoto\app\Controllers\BaseController.php(58): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#10 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-05-31 01:36:37 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\guyubmoto\app\Config\Events.php:35) in C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-31 01:42:21 --> Call to undefined function baseurl()
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Landing/landing...', Array, true)
+#3 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(14): view('Landing/landing...')
+#4 C:\xampp\htdocs\guyubmoto\app\Controllers\Landing.php(11): deployView(Array)
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Landing->index()
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Landing))
+#7 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-31 20:38:36 --> Call to a member function set_option() on null
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}

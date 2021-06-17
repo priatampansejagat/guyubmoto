@@ -1,0 +1,91 @@
+CRITICAL - 2021-06-10 03:30:09 --> Undefined array key "id"
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->redirect()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 06:10:42 --> Undefined array key "file"
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 06:13:01 --> Undefined array key "uploadPhoto_file"
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file_test()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 06:13:42 --> Undefined array key 0
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file_test()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 18:25:53 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(57): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:27:43 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(57): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:30:52 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(59): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:31:16 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(59): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:33:06 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(59): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:35:45 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(60): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:36:05 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(60): curl_setopt(Object(CurlHandle), 10015, Array)
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 22:48:30 --> Undefined array key "uploadPhoto_file"
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post_file()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,112 @@
+CRITICAL - 2021-06-03 02:47:00 --> Undefined array key "data"
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Auth.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Auth->redirect()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 06:11:19 --> Invalid file: Admin/users.php
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/users.php')
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Admin/users', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Admin/users', Array)
+#3 C:\xampp\htdocs\guyubmoto\app\Controllers\Admin.php(21): deployView(Array, Array)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->users()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-03 06:11:25 --> Invalid file: Admin/users.php
+#0 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/users.php')
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Admin/users', Array, true)
+#2 C:\xampp\htdocs\guyubmoto\app\Helpers\fire_helper.php(15): view('Admin/users', Array)
+#3 C:\xampp\htdocs\guyubmoto\app\Controllers\Admin.php(20): deployView(Array, Array)
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Admin->users()
+#5 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-03 08:53:53 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 08:55:55 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 08:58:40 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 08:58:44 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 08:58:55 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 09:03:07 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(70): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 09:05:06 --> Undefined variable $data_object
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 09:05:08 --> Undefined variable $data_object
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 09:05:18 --> Undefined variable $data_object
+#0 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-03 09:05:26 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(68): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-03 09:06:11 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 C:\xampp\htdocs\guyubmoto\app\Libraries\Curl_api.php(115): http_build_query('noparam')
+#1 C:\xampp\htdocs\guyubmoto\app\Controllers\Curl\Api_handler.php(68): App\Libraries\Curl_api->exec()
+#2 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Curl\Api_handler->post()
+#3 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curl\Api_handler))
+#4 C:\xampp\htdocs\guyubmoto\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\guyubmoto\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
