@@ -141,7 +141,7 @@ function refresh_data(){
   $.when(callAjaxPost_Array(dataArray, 'get_fams_member')).then(function(response){
     var data_user = response['data']['data']['data_personal_data'];
     // console.log(response);
-    $("#profile_name_prev").html(data_user['first_name']+' Loppp Cablinaaa');
+    $("#profile_name_prev").html(data_user['first_name']+' Tetangga sebelah');
     // $("#profile_name_prev").html(data_user['first_name']+' '+data_user['mid_name']+' '+data_user['last_name']);
     $("#profile_age").html(data_user['age']);
     $("#profile_mail").html(data_user['email']);
