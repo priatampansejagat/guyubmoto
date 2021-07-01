@@ -170,7 +170,7 @@ function uploadPhoto(obj){
 
   }else {
       $.when(callAjaxPost(obj)).then(function(response){
-        console.log(response);
+        console.log('upload data'+response);
         var formData =  new FormData();
 
         var files = $('#'+target_id+'_file')[0].files;
@@ -182,6 +182,7 @@ function uploadPhoto(obj){
 
         // Ngirim foto
         $.when(callAjaxPost_file_formdata(formData)).then(function(response){
+          console.log('upload file'+response);
           $('#'+obj.id).html('Upload');
           obj.disabled = false;
           var $decoded_data = JSON.parse(response);
