@@ -98,6 +98,7 @@ function refresh_list(){
   // get content page
   $.when(callAjaxPost_Array(dataArray, 'myworks_photography_list')).then(function(response){
     //sesuai semua hasil
+    console.log(response);
     for (var i = 0; i < response['data']['data'].length;) {
       var temp_template = list_template.clone();
       //per row

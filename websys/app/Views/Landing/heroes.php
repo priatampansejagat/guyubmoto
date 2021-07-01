@@ -1,6 +1,7 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 text-left bg-light">
   <div class="col-md-10 p-lg-5 mx-auto my-3">
+    <img src="<?php echo base_url().'/assets/img/logoo.svg'; ?>" alt="" style="width:75px;">
     <h2 class="display-4 font-weight-normal mb-4"><b style="color:#FE4A49;">Hello Creator!</b> <br>Terimakasih telah menggunakan layanan kami.</h2>
     <p class="lead font-weight-normal mb-3">Guyubmoto adalah komunitas fotografi yang membantu fotografer atau calon fotografer dari hulu sampai hilir. Dari mulai belajar sampai dapat menghasilkan keuntungan dari fotografi. Untuk mempermudah itu, terciptalah aplikasi berbasis website guyubmoto. Aplikasi ini ditargetkan gratis 100% kecuali jika memang dibutuhkan biaya operasional. Walau begitu kami tetap memberi feedback atau timbal balik atas support atau bantuan apapun yang kami terima.</p>
     <p class="lead font-weight-normal">Saat inipun aplikasi guyubmoto masih dalam pengembangan. </p> <br>
