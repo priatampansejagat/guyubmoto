@@ -170,6 +170,7 @@ function uploadPhoto(obj){
 
   }else {
       $.when(callAjaxPost(obj)).then(function(response){
+        console.log(response);
         var formData =  new FormData();
 
         var files = $('#'+target_id+'_file')[0].files;
