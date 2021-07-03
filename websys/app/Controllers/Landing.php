@@ -26,6 +26,11 @@ class Landing extends BaseController
 		deployView(['header','bar_top','Landing/heroes','footer','js_handler']);
 	}
 
+	public function devnotes(){
+		// $data = array('page' => 'family', 'title' => 'Rules' );
+		deployView(['header','bar_top','Landing/devnotes','footer','js_handler']);
+	}
+
 }
 
 ?>

@@ -15,7 +15,7 @@
                   <span></span>
               </button>
 
-              <a id="brand_button" href="#">
+              <a id="brand_button" href="<?php echo base_url(); ?>">
                 <img src="<?php echo base_url().LOGO_URL; ?>" width="30" height="30" class="d-inline-block align-top" alt="">
                 <span>Guyubmoto</span>
               </a>
@@ -35,6 +35,9 @@
 
                 <div class="topnav-right">
                   <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?php echo base_url().'/devnotes'; ?>">Dev-Notes<span class="sr-only"></span></a>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link" href="<?php echo base_url().'/heroes'; ?>">Help Us<span class="sr-only"></span></a>
                     </li>
@@ -58,7 +61,7 @@
       }else{ ?>
 
       <div class="container" >
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?php echo base_url(); ?>">
           <img src="<?php echo base_url().LOGO_URL; ?>" width="30" height="30" class="d-inline-block align-top" alt="">
           Guyubmoto
         </a>

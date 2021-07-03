@@ -98,6 +98,7 @@ class Auth extends BaseController{
 		deployView(['header','Auth/reset_password','js_handler']);
 	}
 
+
 	public function logout(){
 		$this->session->destroy();
 		return redirect()->to(base_url());

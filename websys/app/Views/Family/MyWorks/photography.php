@@ -98,7 +98,6 @@ function refresh_list(){
   // get content page
   $.when(callAjaxPost_Array(dataArray, 'myworks_photography_list')).then(function(response){
     //sesuai semua hasil
-    console.log(response);
     for (var i = 0; i < response['data']['data'].length;) {
       var temp_template = list_template.clone();
       //per row
@@ -170,7 +169,6 @@ function uploadPhoto(obj){
 
   }else {
       $.when(callAjaxPost(obj)).then(function(response){
-        console.log('upload data'+response);
         var formData =  new FormData();
 
         var files = $('#'+target_id+'_file')[0].files;
@@ -182,7 +180,6 @@ function uploadPhoto(obj){
 
         // Ngirim foto
         $.when(callAjaxPost_file_formdata(formData)).then(function(response){
-          console.log('upload file'+response);
           $('#'+obj.id).html('Upload');
           obj.disabled = false;
           var $decoded_data = JSON.parse(response);
